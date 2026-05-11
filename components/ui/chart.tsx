@@ -57,7 +57,6 @@ const ChartContainer = React.forwardRef<
         )}
         {...props}
       >
-        <ChartStyle id={chartId} config={config} />
         <RechartsPrimitive.ResponsiveContainer>
           {children}
         </RechartsPrimitive.ResponsiveContainer>
@@ -66,62 +65,6 @@ const ChartContainer = React.forwardRef<
   )
 })
 ChartContainer.displayName = 'Chart'
-
-const ChartStyle = ({ id, config }: { id: string; config: ChartConfig }) => {
-  const colorConfig = Object.entries(config).filter(
-    ([_, config]) => config.theme || config.color,
-  )
-
-  const [mounted, setMounted] = React.useState(false)
-
-  React.useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  React.useEffect(() => {
-    if (!mounted || !colorConfig.length) {
-      return
-    }
-
-    const styleId = `chart-style-${id}`
-    
-    // Check if style already exists
-    if (document.getElementById(styleId)) {
-      return
-    }
-
-    const styleContent = Object.entries(THEMES)
-      .map(
-        ([theme, prefix]) => `
-${prefix} [data-chart=${id}] {
-${colorConfig
-  .map(([key, itemConfig]) => {
-    const color =
-      itemConfig.theme?.[theme as keyof typeof itemConfig.theme] ||
-      itemConfig.color
-    return color ? `  --color-${key}: ${color};` : null
-  })
-  .join('\n')}
-}
-`,
-      )
-      .join('\n')
-
-    const style = document.createElement('style')
-    style.id = styleId
-    style.textContent = styleContent
-    document.head.appendChild(style)
-
-    return () => {
-      const existingStyle = document.getElementById(styleId)
-      if (existingStyle) {
-        existingStyle.remove()
-      }
-    }
-  }, [id, colorConfig, mounted])
-
-  return null
-}
 
 const ChartTooltip = RechartsPrimitive.Tooltip
 
@@ -382,5 +325,4 @@ export {
   ChartTooltipContent,
   ChartLegend,
   ChartLegendContent,
-  ChartStyle,
 }

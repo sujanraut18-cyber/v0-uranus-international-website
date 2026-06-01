@@ -210,8 +210,7 @@ export default function AppliedCoursesPage() {
               We help you find the perfect applied course that aligns with your interests, strengths, and career goals.
             </p>
             <p className="mt-2 text-gray-600 max-w-2xl mx-auto">
-              Led by our CEO Sujan Raut, a Mechanical Engineering graduate from Kathmandu University, our team brings
-              technical expertise and industry insights to guide your educational journey.
+              Our experienced team brings technical expertise and industry insights to guide your educational journey.
             </p>
           </div>
 

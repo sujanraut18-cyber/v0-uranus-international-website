@@ -11,92 +11,67 @@ export default function TestimonialsPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/placeholder.svg?height=300&width=1920"
-            alt="Student Testimonials"
+            alt="Student Resources and Support"
             fill
             className="object-cover brightness-[0.7]"
             priority
           />
         </div>
         <div className="container relative z-10 text-white">
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">Success Stories</h1>
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">Our Commitment to Your Success</h1>
           <p className="mt-4 text-lg max-w-2xl">
-            Hear from our students who successfully achieved their dreams of studying abroad with our guidance.
+            We are dedicated to helping you achieve your international education goals through personalized guidance and comprehensive support.
           </p>
         </div>
       </section>
 
-      {/* Testimonials Grid */}
+      {/* Student Support Section */}
       <section className="py-16 bg-white">
         <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tight text-navy-600">How We Support Your Journey</h2>
+            <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+              Every student deserves expert guidance, honest advice, and continuous support throughout their education journey.
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                name: "Aarav Sharma",
-                university: "University of Manchester, UK",
-                course: "MSc Computer Science",
-                image: "/placeholder.svg?height=300&width=300",
-                testimonial:
-                  "Uranus International Education made my dream of studying in the UK a reality. Their counselors guided me through every step of the process, from choosing the right university to securing my visa. The personal statement assistance was particularly helpful, and I believe it played a key role in my acceptance to the University of Manchester. I'm now enjoying my studies in the UK, and I couldn't have done it without their support.",
+                title: "Expert Counseling",
+                description: "Personalized one-on-one sessions to help you choose the right program, university, and country based on your goals and aspirations.",
+                icon: "💡",
               },
               {
-                name: "Priya Tamang",
-                university: "University of Toronto, Canada",
-                course: "Bachelor of Business Administration",
-                image: "/placeholder.svg?height=300&width=300",
-                testimonial:
-                  "I was confused about which country to choose for my studies. The team at Uranus provided detailed information about each destination and helped me make an informed decision. Now I'm happily studying in Canada! Their visa guidance was exceptional, and they prepared me well for the visa interview. I recommend Uranus International Education to anyone looking to study abroad.",
+                title: "Application Assistance",
+                description: "Comprehensive guidance on preparing strong application materials, personal statements, and essays that highlight your unique strengths.",
+                icon: "📝",
               },
               {
-                name: "Niraj Poudel",
-                university: "Technical University of Munich, Germany",
-                course: "MSc Mechanical Engineering",
-                image: "/placeholder.svg?height=300&width=300",
-                testimonial:
-                  "The visa process for Germany seemed complicated, but with Uranus International Education's expert guidance, it was smooth sailing. Their pre-departure orientation was incredibly helpful too. I particularly appreciated their assistance with the German language requirements and finding affordable accommodation in Munich. Thanks to their support, I'm now pursuing my dream course at one of Germany's top universities.",
+                title: "Visa & Documentation",
+                description: "Complete support with visa applications, document preparation, and immigration procedures to ensure a smooth process.",
+                icon: "📋",
               },
               {
-                name: "Sita Gurung",
-                university: "University of Sydney, Australia",
-                course: "Bachelor of Nursing",
-                image: "/placeholder.svg?height=300&width=300",
-                testimonial:
-                  "I had a wonderful experience with Uranus International Education. Their counselors were knowledgeable, patient, and always available to answer my questions. They helped me find a nursing program that matched my career goals and guided me through the application process. Their scholarship advice also helped me secure partial funding for my studies. I'm grateful for their support and highly recommend their services.",
+                title: "Interview Coaching",
+                description: "Professional preparation for university and visa interviews to build confidence and help you present your best self.",
+                icon: "🎤",
               },
               {
-                name: "Rohan Thapa",
-                university: "New York University, USA",
-                course: "MBA",
-                image: "/placeholder.svg?height=300&width=300",
-                testimonial:
-                  "Applying for an MBA in the US was a complex process, but Uranus International Education made it manageable. Their counselors provided valuable insights into different programs and helped me prepare a compelling application. Their GMAT preparation resources and interview coaching were excellent. Thanks to their guidance, I received an offer from NYU Stern, which was my top choice. I'm truly grateful for their professional support.",
+                title: "Pre-Departure Orientation",
+                description: "Comprehensive workshops on cultural adaptation, accommodation, academics, and practical tips for studying abroad.",
+                icon: "✈️",
               },
               {
-                name: "Anisha Maharjan",
-                university: "University of British Columbia, Canada",
-                course: "MSc Environmental Science",
-                image: "/placeholder.svg?height=300&width=300",
-                testimonial:
-                  "Uranus International Education provided exceptional service from start to finish. They helped me identify universities with strong environmental science programs and guided me through the application process. Their visa support was outstanding, and they even connected me with alumni already studying at UBC. The pre-departure orientation prepared me well for life in Canada. I highly recommend their services to anyone planning to study abroad.",
+                title: "Ongoing Support",
+                description: "Continued assistance even after your departure, connecting you with alumni networks and addressing any concerns that arise.",
+                icon: "🤝",
               },
-            ].map((testimonial, i) => (
-              <div key={i} className="bg-white rounded-lg shadow-md overflow-hidden">
-                <div className="relative h-64">
-                  <Image
-                    src={testimonial.image || "/placeholder.svg"}
-                    alt={testimonial.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <Quote className="h-8 w-8 text-navy-600/20 mb-2" />
-                  <p className="text-gray-600 italic mb-4">{testimonial.testimonial}</p>
-                  <div className="border-t pt-4">
-                    <h3 className="font-bold text-lg">{testimonial.name}</h3>
-                    <p className="text-navy-600">{testimonial.course}</p>
-                    <p className="text-gray-500">{testimonial.university}</p>
-                  </div>
-                </div>
+            ].map((item, i) => (
+              <div key={i} className="bg-white rounded-lg shadow-md p-8 hover:shadow-lg transition-shadow">
+                <div className="text-4xl mb-4">{item.icon}</div>
+                <h3 className="font-bold text-lg mb-3 text-navy-600">{item.title}</h3>
+                <p className="text-gray-600">{item.description}</p>
               </div>
             ))}
           </div>

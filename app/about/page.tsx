@@ -41,17 +41,19 @@ export default function AboutPage() {
             <div className="space-y-6">
               <h2 className="text-3xl font-bold tracking-tight text-navy-600">Our Story</h2>
               <p className="text-gray-600">
-                Founded in 2015 in New Baneshwor, Kathmandu, Uranus International Education began with a clear mission:
-                to bridge the gap between Nepali students and quality international education opportunities.
+                Uranus International Education was established with a clear mission: to bridge the gap between Nepali 
+                students and quality international education opportunities. Based in Kathmandu, we are committed to 
+                helping ambitious students achieve their dreams of studying at world-class universities.
               </p>
               <p className="text-gray-600">
                 We recognized the challenges Nepali students face when navigating the complex process of studying
                 abroad—from choosing the right program to securing visas and preparing for life in a new country.
               </p>
               <p className="text-gray-600">
-                Today, we've helped hundreds of students secure admissions in prestigious universities across the UK,
-                USA, Canada, Germany, and Australia. Our success is measured not just by acceptances, but by the
-                thriving global careers our students build.
+                We work with students across all levels—from undergraduate to postgraduate—helping them gain admissions 
+                in prestigious universities across the UK, USA, Canada, Germany, and Australia. Our commitment is to 
+                ensure you're not just accepted, but prepared to thrive academically and personally in your chosen 
+                destination.
               </p>
             </div>
           </div>

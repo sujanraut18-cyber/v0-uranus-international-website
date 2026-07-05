@@ -307,69 +307,6 @@ export default function AppliedCoursesPage() {
         </div>
       </section>
 
-      {/* Success Stories Section */}
-      <section id="success-stories" className="py-16 bg-white">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight text-navy-600">Success Stories in Applied Fields</h2>
-            <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-              Our students have found success in various applied fields after completing their studies abroad.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              {
-                name: "Rajan Shrestha",
-                course: "MSc Data Science",
-                university: "University of Manchester, UK",
-                outcome: "Data Scientist at Amazon",
-                testimonial:
-                  "The applied nature of my program gave me practical skills that employers valued. Within two months of graduation, I secured a position at Amazon.",
-                image: "/placeholder.svg?height=300&width=300",
-              },
-              {
-                name: "Anjali Patel",
-                course: "Mechanical Engineering",
-                university: "University of Toronto, Canada",
-                outcome: "Design Engineer at Tesla",
-                testimonial:
-                  "The industry projects in my program gave me real-world experience that helped me stand out to employers. I'm now working on cutting-edge electric vehicle technology.",
-                image: "/placeholder.svg?height=300&width=300",
-              },
-              {
-                name: "Bikash Gurung",
-                course: "Digital Marketing",
-                university: "RMIT University, Australia",
-                outcome: "Marketing Manager at Spotify",
-                testimonial:
-                  "My program's focus on practical digital marketing skills and internship component helped me build a portfolio that impressed employers. I'm now leading marketing campaigns at Spotify.",
-                image: "/placeholder.svg?height=300&width=300",
-              },
-            ].map((story, i) => (
-              <Card key={i} className="border-none shadow-md hover:shadow-lg transition-shadow">
-                <div className="relative h-48">
-                  <Image src={story.image || "/placeholder.svg"} alt={story.name} fill className="object-cover" />
-                </div>
-                <CardContent className="pt-6">
-                  <h3 className="font-bold text-lg">{story.name}</h3>
-                  <p className="text-navy-600">{story.course}</p>
-                  <p className="text-gray-500 mb-1">{story.university}</p>
-                  <p className="text-green-600 font-medium mb-3">{story.outcome}</p>
-                  <p className="text-gray-600 italic">{story.testimonial}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <div className="text-center mt-8">
-            <Link href="/testimonials">
-              <Button className="bg-navy-600 hover:bg-navy-700">Read More Success Stories</Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-16 bg-navy-600 text-white">
         <div className="container text-center">

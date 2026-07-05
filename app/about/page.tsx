@@ -195,52 +195,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Team Section */}
-      <section className="py-16 bg-white">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight text-navy-600">Meet Our Expert Team</h2>
-            <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-              Our team of experienced counselors is dedicated to helping you achieve your study abroad goals.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Sunita Thapa",
-                position: "Senior Education Counselor",
-                bio: "Specializing in UK and Canada admissions, Sunita has helped hundreds of students secure placements in top universities.",
-                image: "/placeholder.svg?height=300&width=300",
-              },
-              {
-                name: "Anil Poudel",
-                position: "Visa Specialist",
-                bio: "An expert in visa regulations and immigration policies, Anil ensures our students' visa applications are successful.",
-                image: "/placeholder.svg?height=300&width=300",
-              },
-              {
-                name: "Priya Sharma",
-                position: "Student Success Coordinator",
-                bio: "Priya focuses on pre-departure preparation and helps students transition smoothly to life abroad.",
-                image: "/placeholder.svg?height=300&width=300",
-              },
-            ].map((member, i) => (
-              <div key={i} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-                <div className="relative h-64">
-                  <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold">{member.name}</h3>
-                  <p className="text-navy-600 mb-2">{member.position}</p>
-                  <p className="text-gray-600">{member.bio}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Why Choose Us Section */}
       <section className="py-16 bg-gray-50">
         <div className="container">

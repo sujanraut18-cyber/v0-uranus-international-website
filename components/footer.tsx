@@ -94,7 +94,6 @@ export default function Footer() {
                 { name: "Study Destinations", href: "/destinations" },
                 { name: "Applied Courses", href: "/applied-courses" },
                 { name: "Services", href: "/services" },
-                { name: "Testimonials", href: "/testimonials" },
                 { name: "Contact Us", href: "/contact" },
               ].map((link) => (
                 <li key={link.name}>

@@ -46,8 +46,8 @@ export default function Footer() {
             </div>
 
             <p className="text-gray-300 mb-6">
-              Founded by Sujan Raut (KU Mechanical Engineer), we are your trusted partner for international education
-              opportunities, specializing in applied and industry-relevant courses with excellent career prospects.
+              Founded in 2025, we are your trusted partner for international education opportunities, specializing in
+              applied and industry-relevant courses with excellent career prospects.
             </p>
 
             <div className="flex space-x-4">

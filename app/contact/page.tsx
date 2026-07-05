@@ -11,7 +11,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import * as z from "zod"
-import { Mail, Phone, MapPin, Clock, Send, GraduationCap } from "lucide-react"
+import { Mail, Phone, MapPin, Clock, Send } from "lucide-react"
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -130,14 +130,6 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="flex items-start mt-6 pt-6 border-t border-gray-200">
-                  <GraduationCap className="mr-3 h-6 w-6 text-navy-600 shrink-0 mt-0.5" />
-                  <div>
-                    <h3 className="font-semibold">CEO & Founder</h3>
-                    <p className="text-gray-600">Sujan Raut</p>
-                    <p className="text-gray-600 text-sm">Mechanical Engineer, Kathmandu University, Dhulikhel</p>
-                  </div>
-                </div>
               </div>
 
               <div className="bg-gray-100 p-6 rounded-lg">

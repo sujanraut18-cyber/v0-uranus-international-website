@@ -58,7 +58,6 @@ export default function UKFeature() {
                 </div>
                 <div>
                   <div className="font-bold text-navy-800">United Kingdom</div>
-                  <div className="text-xs text-gray-500">95% Visa Success Rate</div>
                 </div>
               </div>
             </div>

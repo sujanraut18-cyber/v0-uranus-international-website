@@ -1,10 +1,9 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Check, GraduationCap, FileText, Plane, BookOpen, ArrowRight, Users, Award, Globe } from "lucide-react"
+import { Check, GraduationCap, FileText, Plane, BookOpen, ArrowRight, Globe } from "lucide-react"
 import ServiceCard from "@/components/service-card"
 import WhatsAppButton from "@/components/whatsapp-button"
-import StatsCounter from "@/components/stats-counter"
 import ScrollAnimations from "@/components/scroll-animations"
 import UKFeature from "@/components/uk-feature"
 import USAFeature from "@/components/usa-feature"
@@ -33,13 +32,6 @@ export default function Home() {
 
         <div className="container relative z-10 mx-auto px-4 lg:px-8">
           <div className="max-w-4xl space-y-8">
-            {/* Trust Badge */}
-            <div className="inline-flex items-center rounded-full border px-4 py-2 text-sm font-semibold border-gold-400 text-white bg-navy-800/80 backdrop-blur-sm">
-              <Award className="h-4 w-4 mr-2 text-gold-400" />
-              <span className="flex h-2 w-2 rounded-full bg-green-400 mr-2 animate-pulse"></span>
-              Trusted by 500+ Students • 95% Visa Success Rate
-            </div>
-
             {/* Main Headline */}
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
@@ -56,31 +48,6 @@ export default function Home() {
               <span className="text-white font-semibold"> UK, USA, Canada, Germany, and Australia</span>. With honest
               guidance, proven results, and lifelong support.
             </p>
-
-            {/* Key Benefits */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-6">
-              <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <Users className="h-6 w-6 text-green-400" />
-                <div>
-                  <div className="text-white font-semibold">500+ Students</div>
-                  <div className="text-gray-300 text-sm">Successfully Placed</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <Award className="h-6 w-6 text-blue-400" />
-                <div>
-                  <div className="text-white font-semibold">95% Success</div>
-                  <div className="text-gray-300 text-sm">Visa Approval Rate</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <Globe className="h-6 w-6 text-yellow-400" />
-                <div>
-                  <div className="text-white font-semibold">5 Countries</div>
-                  <div className="text-gray-300 text-sm">Study Destinations</div>
-                </div>
-              </div>
-            </div>
 
             {/* Call to Action */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -117,43 +84,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Floating Stats Card - Desktop Only */}
-          <div className="absolute bottom-0 right-0 transform translate-y-1/2 hidden xl:block">
-            <div className="bg-white rounded-lg shadow-2xl p-8 grid grid-cols-2 gap-6 w-[400px]">
-              <div className="text-center">
-                <StatsCounter end={500} suffix="+" title="Students Placed" />
-              </div>
-              <div className="text-center">
-                <StatsCounter end={95} suffix="%" title="Visa Success Rate" />
-              </div>
-              <div className="text-center">
-                <StatsCounter end={100} suffix="+" title="Partner Universities" />
-              </div>
-              <div className="text-center">
-                <StatsCounter end={5} title="Study Destinations" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Mobile Stats Section (visible on mobile only) */}
-      <section className="py-16 bg-white xl:hidden">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 gap-8">
-            <div className="text-center">
-              <StatsCounter end={500} suffix="+" title="Students Placed" />
-            </div>
-            <div className="text-center">
-              <StatsCounter end={95} suffix="%" title="Visa Success Rate" />
-            </div>
-            <div className="text-center">
-              <StatsCounter end={100} suffix="+" title="Partner Universities" />
-            </div>
-            <div className="text-center">
-              <StatsCounter end={5} title="Study Destinations" />
-            </div>
-          </div>
         </div>
       </section>
 

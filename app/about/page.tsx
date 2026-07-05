@@ -41,7 +41,7 @@ export default function AboutPage() {
             <div className="space-y-6">
               <h2 className="text-3xl font-bold tracking-tight text-navy-600">Our Story</h2>
               <p className="text-gray-600">
-                Founded in 2015 in New Baneshwor, Kathmandu, Uranus International Education began with a clear mission:
+                Founded in 2025 in New Baneshwor, Kathmandu, Uranus International Education began with a clear mission:
                 to bridge the gap between Nepali students and quality international education opportunities.
               </p>
               <p className="text-gray-600">

@@ -15,6 +15,7 @@ const navItems = [
   { label: "Services", href: "/#services" },
   { label: "Destinations", href: "/destinations" },
   { label: "Applied Courses", href: "/applied-courses" },
+  { label: "Testimonials", href: "/testimonials" },
   { label: "Contact Us", href: "/contact" },
 ]
 

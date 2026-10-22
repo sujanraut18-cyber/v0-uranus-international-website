@@ -46,8 +46,8 @@ export default function Footer() {
             </div>
 
             <p className="text-gray-300 mb-6">
-              Founded in 2025, we are your trusted partner for international education opportunities, specializing in
-              applied and industry-relevant courses with excellent career prospects.
+              Your trusted partner for international education opportunities. We specialize in guiding Nepali students 
+              toward world-class universities and applied, industry-relevant courses with excellent career prospects.
             </p>
 
             <div className="flex space-x-4">
@@ -94,6 +94,7 @@ export default function Footer() {
                 { name: "Study Destinations", href: "/destinations" },
                 { name: "Applied Courses", href: "/applied-courses" },
                 { name: "Services", href: "/services" },
+                { name: "Testimonials", href: "/testimonials" },
                 { name: "Contact Us", href: "/contact" },
               ].map((link) => (
                 <li key={link.name}>

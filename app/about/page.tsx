@@ -41,17 +41,19 @@ export default function AboutPage() {
             <div className="space-y-6">
               <h2 className="text-3xl font-bold tracking-tight text-navy-600">Our Story</h2>
               <p className="text-gray-600">
-                Founded in 2025 in New Baneshwor, Kathmandu, Uranus International Education began with a clear mission:
-                to bridge the gap between Nepali students and quality international education opportunities.
+                Uranus International Education was established with a clear mission: to bridge the gap between Nepali 
+                students and quality international education opportunities. Based in Kathmandu, we are committed to 
+                helping ambitious students achieve their dreams of studying at world-class universities.
               </p>
               <p className="text-gray-600">
                 We recognized the challenges Nepali students face when navigating the complex process of studying
                 abroad—from choosing the right program to securing visas and preparing for life in a new country.
               </p>
               <p className="text-gray-600">
-                Today, we've helped hundreds of students secure admissions in prestigious universities across the UK,
-                USA, Canada, Germany, and Australia. Our success is measured not just by acceptances, but by the
-                thriving global careers our students build.
+                We work with students across all levels—from undergraduate to postgraduate—helping them gain admissions 
+                in prestigious universities across the UK, USA, Canada, Germany, and Australia. Our commitment is to 
+                ensure you're not just accepted, but prepared to thrive academically and personally in your chosen 
+                destination.
               </p>
             </div>
           </div>
@@ -195,6 +197,52 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Our Team Section */}
+      <section className="py-16 bg-white">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tight text-navy-600">Meet Our Expert Team</h2>
+            <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+              Our team of experienced counselors is dedicated to helping you achieve your study abroad goals.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                name: "Sunita Thapa",
+                position: "Senior Education Counselor",
+                bio: "Specializing in UK and Canada admissions, Sunita helps students find and apply to universities that suit their goals.",
+                image: "/placeholder.svg?height=300&width=300",
+              },
+              {
+                name: "Anil Poudel",
+                position: "Visa Specialist",
+                bio: "An expert in visa regulations and immigration policies, Anil helps students prepare complete and accurate visa applications.",
+                image: "/placeholder.svg?height=300&width=300",
+              },
+              {
+                name: "Priya Sharma",
+                position: "Student Success Coordinator",
+                bio: "Priya focuses on pre-departure preparation and helps students transition smoothly to life abroad.",
+                image: "/placeholder.svg?height=300&width=300",
+              },
+            ].map((member, i) => (
+              <div key={i} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                <div className="relative h-64">
+                  <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold">{member.name}</h3>
+                  <p className="text-navy-600 mb-2">{member.position}</p>
+                  <p className="text-gray-600">{member.bio}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us Section */}
       <section className="py-16 bg-gray-50">
         <div className="container">
@@ -213,10 +261,10 @@ export default function AboutPage() {
                 {[
                   "Specialized expertise in applied and industry-relevant courses with strong job prospects",
                   "Experienced counselors who stay updated with the latest visa and immigration changes",
-                  "Direct partnerships with prestigious universities worldwide",
+                  "Guidance on choosing universities and programs across five study destinations",
                   "Personalized guidance tailored to each student's goals and qualifications",
                   "Comprehensive support from university selection to pre-departure",
-                  "High visa success rate through expert documentation and preparation",
+                  "Careful visa documentation and interview preparation",
                   "Transparent processes with no hidden fees",
                   "Regular workshops and seminars on study abroad opportunities",
                   "Continuous support even after you reach your destination",

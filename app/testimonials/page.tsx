@@ -115,50 +115,13 @@ export default function TestimonialsPage() {
         </div>
       </section>
 
-      {/* Statistics Section */}
-      <section className="py-16 bg-white">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight text-navy-600">Our Success in Numbers</h2>
-            <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-              We take pride in our track record of helping Nepali students achieve their study abroad dreams.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                number: "500+",
-                label: "Students Placed",
-              },
-              {
-                number: "95%",
-                label: "Visa Success Rate",
-              },
-              {
-                number: "100+",
-                label: "Partner Universities",
-              },
-              {
-                number: "5",
-                label: "Study Destinations",
-              },
-            ].map((stat, i) => (
-              <div key={i} className="bg-gray-50 p-6 rounded-lg text-center">
-                <div className="text-4xl font-bold text-navy-600 mb-2">{stat.number}</div>
-                <div className="text-gray-600">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-16 bg-navy-600 text-white">
         <div className="container text-center">
           <h2 className="text-3xl font-bold tracking-tight mb-4">Ready to Write Your Own Success Story?</h2>
           <p className="max-w-2xl mx-auto text-gray-200 mb-8">
-            Join hundreds of successful students who achieved their study abroad dreams with our guidance.
+            Guiding Nepali students toward quality education in the UK and Germany.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="/contact">

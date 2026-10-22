@@ -58,7 +58,7 @@ export default function USAFeature() {
                 </div>
                 <div>
                   <div className="font-bold text-navy-800">United States</div>
-                  <div className="text-xs text-gray-500">90% Visa Success Rate</div>
+                  <div className="text-xs text-gray-500">Study Destination</div>
                 </div>
               </div>
             </div>

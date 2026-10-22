@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button"
 import { Check, GraduationCap, FileText, Plane, BookOpen, ArrowRight, Users, Award, Globe } from "lucide-react"
 import ServiceCard from "@/components/service-card"
 import WhatsAppButton from "@/components/whatsapp-button"
-import StatsCounter from "@/components/stats-counter"
 import ScrollAnimations from "@/components/scroll-animations"
 import UKFeature from "@/components/uk-feature"
 import USAFeature from "@/components/usa-feature"
@@ -37,7 +36,7 @@ export default function Home() {
             <div className="inline-flex items-center rounded-full border px-4 py-2 text-sm font-semibold border-gold-400 text-white bg-navy-800/80 backdrop-blur-sm">
               <Award className="h-4 w-4 mr-2 text-gold-400" />
               <span className="flex h-2 w-2 rounded-full bg-green-400 mr-2 animate-pulse"></span>
-              Trusted by 500+ Students • 95% Visa Success Rate
+              Guiding Nepali students toward quality education in the UK and Germany.
             </div>
 
             {/* Main Headline */}
@@ -54,7 +53,7 @@ export default function Home() {
             <p className="text-lg md:text-xl text-gray-200 max-w-3xl leading-relaxed">
               Based in Kathmandu, we guide ambitious Nepali students to achieve their dreams of studying in the
               <span className="text-white font-semibold"> UK, USA, Canada, Germany, and Australia</span>. With honest
-              guidance, proven results, and lifelong support.
+              guidance and support at every step.
             </p>
 
             {/* Key Benefits */}
@@ -62,15 +61,15 @@ export default function Home() {
               <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-4">
                 <Users className="h-6 w-6 text-green-400" />
                 <div>
-                  <div className="text-white font-semibold">500+ Students</div>
-                  <div className="text-gray-300 text-sm">Successfully Placed</div>
+                  <div className="text-white font-semibold">Personal Guidance</div>
+                  <div className="text-gray-300 text-sm">One-to-one counselling</div>
                 </div>
               </div>
               <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-4">
                 <Award className="h-6 w-6 text-blue-400" />
                 <div>
-                  <div className="text-white font-semibold">95% Success</div>
-                  <div className="text-gray-300 text-sm">Visa Approval Rate</div>
+                  <div className="text-white font-semibold">Visa Support</div>
+                  <div className="text-gray-300 text-sm">Documents & interview prep</div>
                 </div>
               </div>
               <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-4">
@@ -103,55 +102,6 @@ export default function Home() {
                   <Globe className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
-            </div>
-
-            {/* Social Proof */}
-            <div className="pt-8">
-              <p className="text-gray-300 text-sm mb-4">Trusted by students from leading colleges:</p>
-              <div className="flex flex-wrap gap-4 text-gray-400 text-sm">
-                <span>• Tribhuvan University</span>
-                <span>• Kathmandu University</span>
-                <span>• Pokhara University</span>
-                <span>• And many more...</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Floating Stats Card - Desktop Only */}
-          <div className="absolute bottom-0 right-0 transform translate-y-1/2 hidden xl:block">
-            <div className="bg-white rounded-lg shadow-2xl p-8 grid grid-cols-2 gap-6 w-[400px]">
-              <div className="text-center">
-                <StatsCounter end={500} suffix="+" title="Students Placed" />
-              </div>
-              <div className="text-center">
-                <StatsCounter end={95} suffix="%" title="Visa Success Rate" />
-              </div>
-              <div className="text-center">
-                <StatsCounter end={100} suffix="+" title="Partner Universities" />
-              </div>
-              <div className="text-center">
-                <StatsCounter end={5} title="Study Destinations" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Mobile Stats Section (visible on mobile only) */}
-      <section className="py-16 bg-white xl:hidden">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 gap-8">
-            <div className="text-center">
-              <StatsCounter end={500} suffix="+" title="Students Placed" />
-            </div>
-            <div className="text-center">
-              <StatsCounter end={95} suffix="%" title="Visa Success Rate" />
-            </div>
-            <div className="text-center">
-              <StatsCounter end={100} suffix="+" title="Partner Universities" />
-            </div>
-            <div className="text-center">
-              <StatsCounter end={5} title="Study Destinations" />
             </div>
           </div>
         </div>
@@ -472,7 +422,7 @@ export default function Home() {
             />
             <ServiceCard
               title="Visa Guidance"
-              description="Expert advice on visa requirements, application process, and interview preparation with high success rate."
+              description="Expert advice on visa requirements, application process, and interview preparation."
               icon={<Plane className="h-8 w-8 text-navy-600" />}
             />
             <ServiceCard

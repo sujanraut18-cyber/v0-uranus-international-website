@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Uranus International Education | Premier Study Abroad Consultancy in Nepal",
   description:
-    "Leading educational consultancy in Nepal helping students apply to top universities in UK, USA, Canada, Germany, and Australia with focus on applied and industry-relevant courses.",
+    "Educational consultancy in Nepal helping students apply to top universities in UK, USA, Canada, Germany, and Australia with focus on applied and industry-relevant courses.",
   keywords:
     "study abroad, education consultancy, Nepal, UK, USA, Canada, Germany, Australia, visa support, university application",
     generator: 'v0.app'

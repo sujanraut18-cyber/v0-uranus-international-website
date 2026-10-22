@@ -212,13 +212,13 @@ export default function AboutPage() {
               {
                 name: "Sunita Thapa",
                 position: "Senior Education Counselor",
-                bio: "Specializing in UK and Canada admissions, Sunita has helped hundreds of students secure placements in top universities.",
+                bio: "Specializing in UK and Canada admissions, Sunita helps students find and apply to universities that suit their goals.",
                 image: "/placeholder.svg?height=300&width=300",
               },
               {
                 name: "Anil Poudel",
                 position: "Visa Specialist",
-                bio: "An expert in visa regulations and immigration policies, Anil ensures our students' visa applications are successful.",
+                bio: "An expert in visa regulations and immigration policies, Anil helps students prepare complete and accurate visa applications.",
                 image: "/placeholder.svg?height=300&width=300",
               },
               {
@@ -261,10 +261,10 @@ export default function AboutPage() {
                 {[
                   "Specialized expertise in applied and industry-relevant courses with strong job prospects",
                   "Experienced counselors who stay updated with the latest visa and immigration changes",
-                  "Direct partnerships with prestigious universities worldwide",
+                  "Guidance on choosing universities and programs across five study destinations",
                   "Personalized guidance tailored to each student's goals and qualifications",
                   "Comprehensive support from university selection to pre-departure",
-                  "High visa success rate through expert documentation and preparation",
+                  "Careful visa documentation and interview preparation",
                   "Transparent processes with no hidden fees",
                   "Regular workshops and seminars on study abroad opportunities",
                   "Continuous support even after you reach your destination",

@@ -56,6 +56,7 @@ export default function CanadaFeature() {
                 </div>
                 <div>
                   <div className="font-bold text-navy-800">Canada</div>
+                  <div className="text-xs text-gray-500">Study Destination</div>
                 </div>
               </div>
             </div>

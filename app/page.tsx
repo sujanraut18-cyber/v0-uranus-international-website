@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Check, GraduationCap, FileText, Plane, BookOpen, ArrowRight, Globe } from "lucide-react"
+import { Check, GraduationCap, FileText, Plane, BookOpen, ArrowRight, Users, Award, Globe } from "lucide-react"
 import ServiceCard from "@/components/service-card"
 import WhatsAppButton from "@/components/whatsapp-button"
 import ScrollAnimations from "@/components/scroll-animations"
@@ -32,6 +32,13 @@ export default function Home() {
 
         <div className="container relative z-10 mx-auto px-4 lg:px-8">
           <div className="max-w-4xl space-y-8">
+            {/* Trust Badge */}
+            <div className="inline-flex items-center rounded-full border px-4 py-2 text-sm font-semibold border-gold-400 text-white bg-navy-800/80 backdrop-blur-sm">
+              <Award className="h-4 w-4 mr-2 text-gold-400" />
+              <span className="flex h-2 w-2 rounded-full bg-green-400 mr-2 animate-pulse"></span>
+              Guiding Nepali students toward quality education in the UK and Germany.
+            </div>
+
             {/* Main Headline */}
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
@@ -46,8 +53,33 @@ export default function Home() {
             <p className="text-lg md:text-xl text-gray-200 max-w-3xl leading-relaxed">
               Based in Kathmandu, we guide ambitious Nepali students to achieve their dreams of studying in the
               <span className="text-white font-semibold"> UK, USA, Canada, Germany, and Australia</span>. With honest
-              guidance, proven results, and lifelong support.
+              guidance and support at every step.
             </p>
+
+            {/* Key Benefits */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-6">
+              <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <Users className="h-6 w-6 text-green-400" />
+                <div>
+                  <div className="text-white font-semibold">Personal Guidance</div>
+                  <div className="text-gray-300 text-sm">One-to-one counselling</div>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <Award className="h-6 w-6 text-blue-400" />
+                <div>
+                  <div className="text-white font-semibold">Visa Support</div>
+                  <div className="text-gray-300 text-sm">Documents & interview prep</div>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <Globe className="h-6 w-6 text-yellow-400" />
+                <div>
+                  <div className="text-white font-semibold">5 Countries</div>
+                  <div className="text-gray-300 text-sm">Study Destinations</div>
+                </div>
+              </div>
+            </div>
 
             {/* Call to Action */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -71,19 +103,7 @@ export default function Home() {
                 </Button>
               </Link>
             </div>
-
-            {/* Social Proof */}
-            <div className="pt-8">
-              <p className="text-gray-300 text-sm mb-4">Trusted by students from leading colleges:</p>
-              <div className="flex flex-wrap gap-4 text-gray-400 text-sm">
-                <span>• Tribhuvan University</span>
-                <span>• Kathmandu University</span>
-                <span>• Pokhara University</span>
-                <span>• And many more...</span>
-              </div>
-            </div>
           </div>
-
         </div>
       </section>
 
@@ -402,7 +422,7 @@ export default function Home() {
             />
             <ServiceCard
               title="Visa Guidance"
-              description="Expert advice on visa requirements, application process, and interview preparation with high success rate."
+              description="Expert advice on visa requirements, application process, and interview preparation."
               icon={<Plane className="h-8 w-8 text-navy-600" />}
             />
             <ServiceCard
@@ -416,6 +436,79 @@ export default function Home() {
             <Link href="/services">
               <Button className="bg-navy-800 hover:bg-navy-900 text-white">
                 Explore All Services
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section id="testimonials" className="py-24 bg-gray-50">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center mb-16 fade-in-up">
+            <div className="inline-flex items-center rounded-full border px-3 py-1 text-xs font-semibold border-navy-200 text-navy-800 mb-4">
+              Success Stories
+            </div>
+
+            <h2 className="text-4xl font-bold tracking-tight gradient-text section-heading">What Our Students Say</h2>
+
+            <p className="mt-8 text-gray-600 max-w-2xl mx-auto text-lg">
+              Hear from students who have successfully achieved their study abroad dreams with our guidance.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 fade-in-up">
+            {[
+              {
+                name: "Aarav Sharma",
+                university: "University of Manchester, UK",
+                course: "MSc Data Science",
+                testimonial:
+                  "Uranus International made my dream of studying in the UK a reality. Their counselors guided me through every step of the process, from choosing the right university to securing my visa.",
+                image: "/placeholder.svg?height=100&width=100",
+              },
+              {
+                name: "Priya Tamang",
+                university: "University of Toronto, Canada",
+                course: "Business Administration",
+                testimonial:
+                  "I was confused about which country to choose for my studies. The team provided detailed information about each destination and helped me make an informed decision. Now I'm happily studying in Canada!",
+                image: "/placeholder.svg?height=100&width=100",
+              },
+              {
+                name: "Niraj Poudel",
+                university: "Technical University of Munich",
+                course: "Mechanical Engineering",
+                testimonial:
+                  "The visa process for Germany seemed complicated, but with their expert guidance, it was smooth sailing. Their pre-departure orientation was incredibly helpful too.",
+                image: "/placeholder.svg?height=100&width=100",
+              },
+            ].map((testimonial, i) => (
+              <div key={i} className="bg-white p-6 rounded-lg shadow-lg">
+                <div className="flex items-center gap-4 mb-4">
+                  <Image
+                    src={testimonial.image || "/placeholder.svg"}
+                    alt={testimonial.name}
+                    width={60}
+                    height={60}
+                    className="rounded-full"
+                  />
+                  <div>
+                    <h3 className="font-bold text-lg">{testimonial.name}</h3>
+                    <p className="text-sm text-gray-600">{testimonial.university}</p>
+                    <p className="text-xs text-red-600">{testimonial.course}</p>
+                  </div>
+                </div>
+                <p className="text-gray-700 italic">"{testimonial.testimonial}"</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12 fade-in-up">
+            <Link href="/testimonials">
+              <Button className="bg-navy-800 hover:bg-navy-900 text-white">
+                Read More Success Stories
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </Link>

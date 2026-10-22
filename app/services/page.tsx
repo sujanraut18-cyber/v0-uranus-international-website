@@ -365,10 +365,19 @@ export default function ServicesPage() {
             Contact us today to book a free consultation with our expert counselors and take the first step towards your
             global education.
           </p>
-          <div className="flex justify-center">
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="/contact">
               <Button size="lg" className="bg-gold-500 hover:bg-gold-600 text-navy-800 font-semibold w-full sm:w-auto">
                 Book a Free Consultation
+              </Button>
+            </Link>
+            <Link href="/testimonials">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white/20 w-full sm:w-auto"
+              >
+                Read Success Stories
               </Button>
             </Link>
           </div>
